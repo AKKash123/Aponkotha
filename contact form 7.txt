@@ -1,0 +1,10 @@
+<label> নাম</label>
+[text* your-name placeholder "আপনার নাম" ]
+<label> ইমেইল আইডি </label>
+[email*  your-email placeholder "আপনার ইমেইল আইডি"]
+<label> বিষয় </label>
+[text* your-subject placeholder "বিষয়"]
+<label> বার্তা </label>
+[textarea* your-message placeholder "আপনার বার্তা"] 
+
+[submit "Submit"]
