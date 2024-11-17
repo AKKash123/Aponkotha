@@ -1,0 +1,249 @@
+@import '../mixin';
+.branda-admin-page {
+    .sui-wrap-branda {
+        .simple-option-select2,
+        .simple-option-select2-ajax {
+            select {
+                min-width: 300px;
+                width: 40%;
+            }
+        }
+        .branda-empty {
+            padding: 0 10px 30px;
+            text-align: center;
+            h2 {
+                &.branda-image {
+                    margin-top: 0;
+                    &:before {
+                        content: "";
+                        display: block;
+                        width: 128px;
+                        height: 128px;
+                        background: transparent none no-repeat 50%;
+                        margin: 30px auto;
+                    }
+                    &.branda-image-confused {
+                        &:before {
+                            background-image: url(../images/branda/confused@1x.png);
+                        }
+                    }
+
+                  &.branda-image-empty {
+                    &:before {
+                      background-image: url(../images/branda/empty-office-tray.png);
+                    }
+                  }
+                }
+            }
+        }
+        .branda-divider {
+            border-bottom: 1px solid $gray_e6;
+            margin: 21px 15px 0;
+        }
+        .branda-accordion-body {
+            .sui-row {
+                &:last-child {
+                    .branda-divider {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .branda-images-images-override {
+            max-width: 500px;
+        }
+		> div.sui-header > h1.sui-header-title {
+			text-transform: uppercase;
+		}
+        .sui-actions-left {
+            &.top {
+                .select-container {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .sui-accordion-item-header {
+            .check-column {
+                max-width: 55px;
+            }
+        }
+        canvas {
+            &.branda-focal {
+                width: 302px;
+                height: 202px;
+                border: 1px solid $gray_e6;
+                margin-top: 10px;
+                background: {
+                    color: #ddd;
+                    size: 150%;
+                    repeat: no-repeat;
+                }
+            }
+        }
+        .branda-not-affected {
+            opacity: .5;
+        }
+        .check-column {
+            max-width: 55px;
+            label {
+                &.sui-checkbox {
+                    min-width: 18px;
+                }
+            }
+        }
+        .sui-modal {
+            &.sui-modal-sm {
+                &.branda-test-email {
+                    .sui-box {
+                        .sui-box-header {
+                            padding-bottom: 0;
+                        }
+                        .sui-box-body {
+                            padding-bottom: 7px;
+                        }
+                        .sui-box-footer {
+                            padding-bottom: 40px;
+                            /*background: {
+                                image: url(../images/branda/happy@2x.png);
+                                repeat: no-repeat;
+                                position: 50% 100%;
+                                size: 140px auto;
+                            }*/
+                            .sui-button {
+                                .sui-icon-loader {
+                                    position: static;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sui-modal {
+            #branda-copy-settings-db-error-page,
+            .branda-test-email {
+                .sui-box {
+                    .sui-box-body {
+                        .sui-label {
+                            color: #aaa;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .ace_emptyMessage {
+            color: $gray_a;
+        }
+        .simple-option {
+            .sui-tab-item {
+                &.branda-icon {
+                    &.active {
+                        svg {
+                            path {
+                                fill: $blue_1;
+                            }
+                        }
+                    }
+                }
+            }
+            .sui-tabs-menu {
+                .sui-form-control {
+                    padding: 9px 14px;
+                    margin-left: 10px;
+                    @include border-radius( 4px );
+                    font-size: 15px;
+                }
+            }
+            &.simple-option-sui-tab-icon {
+                div[for=simple_options_design_background_position_x],
+                div[for=simple_options_design_background_position_y] {
+                    max-width: 355px;
+                }
+            }
+        }
+        &.no-branda {
+            .branda-empty {
+                h2 {
+                    &.branda-image {
+                        &:before {
+                            @include branda_reset_branding(0);
+                            display: none;
+                        }
+                        &.branda-image-confused {
+                            &:before {
+                                @include branda_reset_branding(0);
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+		#branda-permissions-users {
+			border: 0;
+			.sui-box-builder-body {
+				padding: 0;
+				background-color: #FFF;
+			}
+			.sui-builder-field {
+				border: 1px solid #E6E6E6;
+				padding: 10px 15px;
+				margin: 0 0 10px;
+				min-height: unset;
+				&:hover {
+					box-shadow: none;
+				}
+				.sui-builder-field-label span:last-child {
+					font-weight: 400;
+					color: #888;
+				}
+			}
+			.branda-button-hover-red {
+				width: 9%;
+				&:hover {
+					color: #FF6D6D;
+				}
+			}
+			.branda-permissions-user-title {
+				width: 30%;
+			}
+			.branda-field-image {
+				width: 30px;
+				height: 30px;
+				margin-right: 10px;
+
+				.branda-circle-image {
+					width: 28px;
+					height: 28px;
+					-ms-flex: 0 0 30px;
+					flex: 0 0 30px;
+					border-radius: 30px;
+				}
+			}
+		}
+		#branda-permissions-add-user span[role="presentation"] {
+			display: none;
+		}
+		#branda-permissions-add-user .sui-loading-text-adding {
+			display: none;
+			i:before {
+				animation: spin 1.3s linear infinite;
+			}
+		}
+		ul.branda-small-list {
+			padding-left: 17px;
+			margin: 0;
+			list-style: disc;
+			color: black;
+
+			> li > span.sui-settings-label {
+				font-size: 13px;
+			}
+		}
+		.branda-new-features h3.sui-box-title {
+			white-space: normal;
+		    overflow: visible;
+		}
+    }
+}

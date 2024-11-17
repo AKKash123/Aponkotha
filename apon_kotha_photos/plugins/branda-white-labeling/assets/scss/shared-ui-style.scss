@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+// Set summary image
+//
+// NOTE: If you don't enter this variable, the image won't show on the summary.
+$summary-image: '../../assets/images/branda/branda-icon.png';
+$summary-image-sm: '../../assets/images/branda/branda-icon.png';
+
+// ========================================
+//Branda Pro
+$upgrade-image: '../../assets/images/branda/upgrade-large.png';
+$upgrade-image-mobile: '../../assets/images/branda/upgrade-large.png';
+
+// ========================================
+// Overwrite image size
+$summary-image--width:  60px;
+$summary-image--height: auto;
+
+// Cross-sell Banners
+// In lowercase insert the name of the plugin you want to promote.
+
+$cross-sell-1: 'smush';
+$cross-sell-2: 'defender';
+$cross-sell-3: 'smartcrawl';
+
+// ========================================
+// Use bunny fonts instead of google for GDPR compliance.
+$google-fonts-url: 'https://fonts.bunny.net/css?family=Roboto:400,500,700';
+
+// ============================================================
+// Shared UI
+// Import original shared-ui styles.
+@import "~@wpmudev/shared-ui/scss/shared-ui.scss";
+
+// ============================================================
+// WP Editor
+// Custom styles for WP Editor fields to match SUI.
+@import "~@wpmudev/shared-ui/scss/sui-wp-editor.scss";
+
+// ============================================================
+// Shared UI
+// There are some styles from SUI that needs to be overwritten
+// per project only. Those kind of styles should be placed
+// inside "shared-ui" folder:
+@import "overrides/overrides";
+
+// ============================================================
+// Admin UI
+// The following styles are specifically for the project and not
+// related to shared-ui. For example, if the project uses a box
+// or button that belongs only to the project, those files can be
+// placed inside "admin-ui" folder:

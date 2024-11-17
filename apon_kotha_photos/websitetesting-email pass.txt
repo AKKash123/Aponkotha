@@ -1,0 +1,10 @@
+gmail/hosting
+uname:aponkotha93@gmail.com
+password: Aponkotha@123
+godaddy
+uname:aponkotha93@gmail.com
+password: aponKotha@123
+
+wp-admin
+uname:admin
+pass:admin123
